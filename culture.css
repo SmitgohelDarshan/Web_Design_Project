@@ -1,0 +1,31 @@
+nav {
+    text-align: center;
+    background-color: rgb(231, 178, 109);
+    color: azure;
+    padding: 15px; /* Adjusted padding for better height */
+}
+
+nav ul {
+    list-style: none; /* Removes bullets */
+}
+
+nav ul li {
+    display: inline-block; /* Ensures proper spacing */
+    margin: 0 15px; /* Spaces out menu items */
+}
+
+nav a {
+    text-decoration: none;
+    color: azure;
+    font-size: x-large;
+    font-family: -apple-system;
+    padding: 10px 15px; /* Adds better spacing */
+    display: inline-block; /* Ensures padding applies correctly */
+}
+
+/* Hover Effect: Changes color when mouse is over */
+nav a:hover {
+    color: black; /* Changes text color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    border-radius: 5px; /* Smooth rounded edges */
+}

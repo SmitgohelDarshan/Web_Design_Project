@@ -1,0 +1,25 @@
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color:blanchedalmond;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block; /* Better spacing */
+    margin:10px;
+    font-size: x-large;
+}
+
+nav a {
+    text-decoration: none;
+    color:cornflowerblue;
+    padding:10px 15px; 
+    display: inline-block;
+}
+
+nav a:hover {
+    color: white;
+    background-color: gray;
+    border-radius: 10px;
+}
