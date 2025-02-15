@@ -1,20 +1,25 @@
+/* Header Styles */
 header {
     text-align: center;
-    background-color: #ff7e5f; 
+    background: linear-gradient(135deg, #007991, #78ffd6);
     padding: 20px 0;
     color: white; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
 }
 
 header h1 {
     font-size: 40px; 
     margin: 0;
     padding-bottom: 10px;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Navigation Bar */
 nav {
-    background-color: #feb47b; 
-    padding: 10px 0;
+    background: linear-gradient(135deg, #ffb88c, #ff6f61);
+    padding: 12px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -26,19 +31,66 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
-    font-size: 19.2px; 
-    font-family: Arial, sans-serif;
-    padding: 5px 10px;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+    transition: all 0.6s ease-in-out;
 }
 
 nav a:hover {
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    font-size: 22px;
     color: white;
+    background: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    text-align: center;
+    background: linear-gradient(135deg, #007991, #78ffd6); /* Cool Gradient */
+    padding: 20px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    transition: 0.3s;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+#contact a {
+    color: #e9c67a;
+}
+
+#email {
+    color: #fff;
+}
+
+#copyright {
+    color: #f8b400;
+}
+ 
+footer a:hover {
     background-color: #333;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 5px;
 }

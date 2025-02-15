@@ -1,31 +1,71 @@
 nav {
     text-align: center;
-    background-color: rgb(231, 178, 109);
+    background: linear-gradient(135deg, #D4AF37, #B8860B);
     color: azure;
-    padding: 15px; /* Adjusted padding for better height */
+    /* padding: 0px; Adjusted padding for better height */
 }
 
 nav ul {
-    list-style: none; /* Removes bullets */
+    list-style: none; 
 }
 
 nav ul li {
-    display: inline-block; /* Ensures proper spacing */
-    margin: 0 15px; /* Spaces out menu items */
+    display: inline-block; 
+    margin: 0 15px; 
 }
 
 nav a {
     text-decoration: none;
     color: azure;
     font-size: x-large;
-    font-family: -apple-system;
-    padding: 10px 15px; /* Adds better spacing */
-    display: inline-block; /* Ensures padding applies correctly */
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 15px; 
+    transition: 0.3s;
+    border-radius: 5px;
+    display: inline-block; 
+    transition: all 0.6s ease-in-out;
 }
 
-/* Hover Effect: Changes color when mouse is over */
+
 nav a:hover {
-    color: black; /* Changes text color on hover */
-    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
-    border-radius: 5px; /* Smooth rounded edges */
+    transform: scale(1.1);
+    color: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 5px 15px;
+    background: #333 ;
 }
+
+footer {
+    color:rgb(250, 245, 245);
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    text-align: center;
+    background-color:rgb(99, 82, 37);
+}
+
+footer a {
+    text-decoration: none;
+}
+ 
+#contact a {
+    color:aqua;
+}
+
+#email a {
+    color:rgb(253, 253, 2);
+}
+
+#copyright {
+    color:white;
+    
+}
+ 
+footer a:hover{
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
