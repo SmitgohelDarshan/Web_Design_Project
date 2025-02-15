@@ -4,110 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Incredible India</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
     <header>
-        <h1>Welcome to <mark>Incredible India</mark></h1>
+        <h1>Welcome to Incredible India</h1>
         <p id="headertext">Discover the diversity, beauty, and rich heritage of India!</p>
         <nav>
             <ul>
                 <li><a href="#Home">Home</a></li>
-                <li><a href="./culture.html" target="_blank">Culture</a></li>
-                <li><a href="./landmark.html" target="_blank">Landmarks</a></li>
-                <li><a href="./cuisine.html" target="_blank">Cuisine</a></li>
-                <li><a href="./contact.html" target="_blank">Contact Us</a></li>
+                <li><a href="./culture.html">Culture</a></li>
+                <li><a href="./landmark.html">Landmarks</a></li>
+                <li><a href="./cuisine.html">Cuisine</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="Home">
-            <h2>About India</h2>
-            <p>
-                India is a land of incredible diversity. From the snow-capped peaks of the Himalayas to the serene
-                backwaters of Kerala,
-                every corner of India tells a unique story. India is the <b>second-most populous country</b> in the
-                world and boasts a history
-                spanning thousands of years. Its rich traditions have left an indelible mark on the world.
-            </p>
-            <img src="../india_map.jpg" alt="Map of India showcasing its diversity" width="500px" title="India Map">
-            <p><b>India:</b> A land of cultural and geographical diversity</p>
-            <blockquote>"Unity in diversity is not just a slogan in India but a way of life."</blockquote>
-            <p>Highlights of India include:</p>
-            <ul>
-                <li><b>Architecture:</b> Majestic monuments like the Taj Mahal and Red Fort.</li>
-                <li><b>Cuisine:</b> Diverse flavors from spicy curries to sweet desserts.</li>
-                <li><b>Culture:</b> Vibrant festivals, classical dances, and colorful attire.</li>
-            </ul>
+        <section class="home-parallax">
+            <img src="../india_map.jpg" id="indian-img" alt="Map of India showcasing its diversity" title="India Map">
+            <div class="content">
+                <h2>About India</h2>
+                <p>India is a land of incredible diversity. From the snow-capped Himalayas to the serene backwaters of Kerala, every corner tells a unique story.</p>
+                <p><b>India:</b> A land of cultural and geographical diversity.</p>
+                <blockquote>"Unity in diversity is not just a slogan in India but a way of life."</blockquote>
+                <p>Highlights of India:</p>
+                <ul>
+                    <li><b>Architecture:</b> Taj Mahal, Red Fort.</li>
+                    <li><b>Cuisine:</b> Spicy curries, sweet desserts.</li>
+                    <li><b>Culture:</b> Vibrant festivals, classical dances.</li>
+                </ul>
+            </div>
         </section>
-
-        <section>
+       
+        <section class="landmarks-parallax">
+            <div id="heading">
             <h2>Famous Landmarks</h2>
             <p>
                 India is home to <mark>29 UNESCO World Heritage Sites,</mark> making it a paradise for history and
                 architecture enthusiasts.
             </p>
+            </div>
             <ol>
                 <li>
-                    <img src="../tajmahal.jpg" width="500px" alt="The Taj Mahal, a symbol of eternal love"
+                    <img src="../tajmahal.jpg" id="tajmahal-img" width="500px" alt="The Taj Mahal, a symbol of eternal love"
                         title="Taj Mahal">
                     <p><b>The Taj Mahal:</b> A symbol of eternal love</p>
                 </li>
                 <li>
-                    <img src="../qutubminar.jpg" width="500px" alt="The Qutub Minar, an architectural marvel in Delhi"
+                    <img src="../qutubminar.jpg" id="qutubminar-img" width="500px" alt="The Qutub Minar, an architectural marvel in Delhi"
                         title="Qutub Minar">
                     <p><b>The Qutub Minar:</b> An architectural marvel in Delhi</p>
                 </li>
             </ol>
             <p>Don't miss exploring the intricate carvings, towering minarets, and breathtaking landscapes!</p>
+
         </section>
 
-        <section>
-            <h2>Indian Culture</h2>
-            <p>
-                India's <b>cultural heritage</b> is a blend of various traditions, languages, and religions. Each region
-                has its unique identity
-                and traditions that are celebrated through festivals and daily life. Here are some highlights:
-            </p>
-            <ul>
-                <li><b>Classical Dances:</b> Bharatanatyam, Kathak, and Odissi.</li>
-                <li><b>Music:</b> Traditional instruments like the sitar, tabla, and veena.</li>
-                <li><b>Festivals:</b> Diwali, Holi, Eid, and Christmas bring people together in celebration.</li>
-            </ul>
-            <img src="../dance.jpg" width="500px" alt="Indian Classical Dance performance" title="Dance">
-            <p>A glimpse of Indian Classical Dance</p>
+        <section class="culture-parallax">
+            <img src="../dance.jpg" id="dance-img" alt="Indian Classical Dance performance" title="Dance">
+            <div class="culture-text">
+                <h2>Indian Culture</h2>
+                <p>India's cultural heritage is a blend of various traditions, languages, and religions. Festivals, music, and dance are integral parts of Indian culture.</p>
+                <ul>
+                    <li><b>Classical Dances:</b> Bharatanatyam, Kathak, Odissi.</li>
+                    <li><b>Music:</b> Instruments like sitar, tabla, veena.</li>
+                    <li><b>Festivals:</b> Diwali, Holi, Eid, Christmas.</li>
+                </ul>
+            </div>
         </section>
 
-        <section>
-            <h2>Delicious Indian Cuisine</h2>
-            <p>
-                Indian food is as diverse as its culture. From the fiery curries of the south to the hearty bread of the
-                north, there's something for everyone. Popular dishes include:
-            </p>
-            <ul>
-                <li><b>North Indian:</b> Butter chicken, naan, and paneer tikka.</li>
-                <li><b>South Indian:</b> Dosa, idli, and sambhar.</li>
-                <li><b>Street Food:</b> Pani puri, chaat, and vada pav.</li>
-            </ul>
-            <img src="../biryani.jpg" width="500px" alt="Hyderabadi Biryani served in a bowl" title="Biryani">
-            <p>Delicious Hyderabadi Biryani</p>
-            <img src="../street_food.jpg" width="500px" alt="Colorful and flavorful Indian street food"
-                title="Street Food">
-            <p>Colorful and flavorful Indian street food</p>
+        <section class="cuisine-parallax">
+            <img src="../biryani.jpg" id="biryani-img" alt="Hyderabadi Biryani served in a bowl" title="Biryani">
+            <img src="../street_food.jpg" id="food-img" alt="Colorful and flavorful Indian street food" title="Street Food">
+            <div class="cuisine-text">
+                <h2>Delicious Indian Cuisine</h2>
+                <p>Indian food is as diverse as its culture. From the fiery curries of the south to the hearty bread of the north, there's something for everyone.</p>
+                <ul>
+                    <li><b>North Indian:</b> Butter chicken, naan, paneer tikka.</li>
+                    <li><b>South Indian:</b> Dosa, idli, sambhar.</li>
+                    <li><b>Street Food:</b> Pani puri, chaat, vada pav.</li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Contact us at <a href="">info@incredibleindia.com</a></p>
-        <p>&copy; 2025 Incredible India Project. All rights reserved.</p>
-        <p>Follow us on:
-            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"
-                target="_blank">Facebook</a> |
-            <a href="https://x.com/?lang=en&mx=2" target="_blank">Twitter</a>
+        <p id="contact">Contact us at:<a href="">info@incredibleindia.com</a></p>
+        <p id="copyright">&copy; 2025 Incredible India Project. All rights reserved.</p>
+        <p id="links">Follow us on:
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a> |
+            <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
         </p>
     </footer>
 </body>
-
 </html>
