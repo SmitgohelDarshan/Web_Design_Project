@@ -1,12 +1,13 @@
+/* Navigation */
 nav {
     text-align: center;
     background: linear-gradient(135deg, #D4AF37, #B8860B);
     color: azure;
-    /* padding: 0px; Adjusted padding for better height */
 }
 
 nav ul {
     list-style: none; 
+    padding: 0;
 }
 
 nav ul li {
@@ -21,51 +22,132 @@ nav a {
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     padding: 10px 15px; 
-    transition: 0.3s;
+    transition: all 0.6s ease-in-out;
     border-radius: 5px;
     display: inline-block; 
-    transition: all 0.6s ease-in-out;
 }
-
 
 nav a:hover {
     transform: scale(1.1);
     color: white; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 5px 15px;
-    background: #333 ;
+    background: #333;
 }
 
+/* Footer */
 footer {
-    color:rgb(250, 245, 245);
+    color: rgb(250, 245, 245);
     font-size: larger;
     display: flex;
     flex-direction: column;
     height: 160px;
     text-align: center;
-    background-color:rgb(99, 82, 37);
+    background-color: rgb(99, 82, 37);
+    padding: 10px;
 }
 
 footer a {
     text-decoration: none;
 }
- 
+
 #contact a {
-    color:aqua;
+    color: aqua;
 }
 
 #email a {
-    color:rgb(253, 253, 2);
+    color: rgb(253, 253, 2);
 }
 
 #copyright {
-    color:white;
-    
+    color: white;
 }
- 
-footer a:hover{
+
+footer a:hover {
     background-color: black;
     border-radius: 10px;
     padding: 5px;
 }
 
+/* Main Section */
+main {
+    background: linear-gradient(150deg, #081c15, #00b4d8);
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* General Section Styling */
+section {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+
+.culture {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.saree {
+    position: relative;
+    width: 100%;
+    height: 105vh; 
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+/* Images Cover Full Box */
+.culture img, .saree img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.5s ease-in-out;
+}
+
+/* Hidden Text Content */
+.culture .diwali-content, .saree .saree-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Hover Effect: Show Text */
+.culture:hover .diwali-content, .saree:hover .saree-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*  No Hover Effect */
+.languages {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
