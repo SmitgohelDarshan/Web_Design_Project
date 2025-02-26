@@ -3,11 +3,10 @@ nav {
     background: linear-gradient(135deg, #1E3A8A, #3B82F6);
     color: azure;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-
-    /* padding: 0px; Adjusted padding for better height */
 }
 
 nav ul {
+    margin: 0px;
     list-style: none; 
 }
 
@@ -67,4 +66,156 @@ footer a:hover{
     background-color: black;
     border-radius: 10px;
     padding: 5px;
+}
+
+/* Main Section */
+main {
+    background: linear-gradient(150deg, #081c15, #00b4d8);
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{     
+    list-style-type: none;
+}
+section {  /* for all sections*/
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+    position: relative;
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.landmark-heading, .landmark-redfort, .landmark-dallake{
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+}
+
+.landmark-table{width: 100%; height: 60vh;}
+caption, thead, tbody{border: #d5f507 solid;}
+
+.redfort-head{
+    top: 0;
+    position: relative;
+    height: 30%;
+}
+
+#dallake-img{
+    height: 110vh; width: 100%;
+    padding: 0px 10px;
+
+}
+#redfort-img {
+    width: 100%;
+    height: 100vh;
+    /* object-fit: cover; height and width=100% */
+    position: absolute;
+    top: 10%;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.landmark-redfort:hover #redfort-img,
+.landmark-dallake:hover #dallake-img{
+    transform: scale(1.1);
+}
+
+.content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+}
+.landmark-redfort:hover .content,
+.landmark-dallake:hover .content{
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+}
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav a {
+        font-size: large;
+        padding: 8px 12px;
+    }
+
+    main {
+        padding: 40px 10px;
+    }
+
+    section {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .landmark-heading, .landmark-redfort, .landmark-dallake {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .landmark-table {
+        height: auto;
+        /* overflow-x: auto; */
+    }
+
+    table {
+        width: 100%;
+        font-size: smaller;
+    }
+
+    #redfort-img,
+    #dallake-img {
+        height: auto;
+        position: relative;
+        width: 100%;
+    }
+
+    .content {
+        position: relative;
+        opacity: 1;
+        transform: translateY(0);
+        padding: 15px;
+    }
+
+    footer {
+        font-size: medium;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    footer p {
+        margin: 5px 0;
+    }
 }

@@ -103,7 +103,7 @@ section {
 }
 /*  No Hover Effect */
 .languages {
-    /* position: relative; */
+    height: 60vh;
     width: 90%;
     max-width: 1200px;
     background: rgba(255, 255, 255, 0.1);
@@ -113,21 +113,25 @@ section {
     box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
     text-align: center;
 }
-caption, thead, tbody{border: #d5f507 solid;}
+summary{
+    margin-top: 20px;
+}
+table{
+    margin: 2% 10%;
+    width: 80%;    
+    border: #d5f507 solid;}
 
 .saree {
     /* position: relative; */
     width: 100%;
-    height: 105vh; 
+    height: 120vh; 
     overflow: hidden;
     border-radius: 10px;
 }
 
-
-/* Images Cover Full Box */
-.culture img, .saree img {
+.saree img,.culture img {
     width: 100%;
-    height: 100%;
+    height: 120vh;
     transition: transform 0.5s ease-in-out;
 }
 .culture:hover img, .saree:hover img { 
@@ -156,4 +160,62 @@ caption, thead, tbody{border: #d5f507 solid;}
     transform: translateY(0);
 }
 
+/* Responsive Web Page Using Media Queries */
+@media (max-width: 768px) {
+    /* Navbar Responsive */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
 
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px;
+        width: 100%;
+    }
+
+    /* Main Section */
+    main {
+        padding: 30px 10px;
+    }
+
+    /* Adjust Section Width */
+    section {
+        width: 85%;
+        padding: 5px;
+        margin: 10px auto;
+    }
+
+    #diwali-img, #saree-img{align-content: center; margin-top: 30px; height: 300px; width: 90%;}
+    
+
+    /* Make Tables Responsive */
+    table {
+        width: 90%;
+        /* overflow-x: auto; */
+    }
+
+    /* Hide Hover Effects on Mobile */
+    .culture .diwali-content, .saree .saree-content {
+        position: relative;
+        opacity: 1;
+        transform: none;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    /* Footer Responsive */
+    footer {
+        height: auto;
+        font-size: medium;
+        padding: 20px;
+    }
+}

@@ -94,3 +94,134 @@ footer a:hover {
     border-radius: 10px;
     padding: 5px;
 }
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    background: #f0f2f5; /* Light background */
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Styling */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #007991;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+form {
+    margin: auto;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+input, select, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+/* Style for Gender Selection */
+form .gender-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+}
+
+form .gender-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between radio button and text */
+}
+
+form input[type="radio"] {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+}
+.sub{padding-top: 20px;}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007991;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 121, 145, 0.5);
+}
+
+/* Buttons */
+input[type="submit"], input[type="reset"] {
+    background: #007991;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background: #005f73;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav a {
+        font-size: large;
+        padding: 8px 12px;
+    }
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+    iframe{
+        width: 100%;
+    }
+}
