@@ -185,14 +185,16 @@ caption, thead, tbody{border: #d5f507 solid;}
         padding: 20px 0;
     }
 
-    .landmark-table {
+     .landmark-table {
+        padding-left: 0%;
         height: auto;
-        /* overflow-x: auto; */
+        overflow-x: auto; 
     }
 
     table {
+        table-layout: fixed;
         width: 100%;
-        font-size: smaller;
+        font-size: 10px;
     }
 
     #redfort-img,

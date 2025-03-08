@@ -205,7 +205,18 @@ table{
     }
 
     /* Hide Hover Effects on Mobile */
-    .culture .diwali-content, .saree .saree-content {
+    .culture .diwali-content{
+        position: relative;
+        padding: 5px;
+        opacity: 1;
+        transform: none;
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .culture{
+        height: 100vh;
+    }
+    .saree{height: 90vh;}
+     .saree .saree-content {
         position: relative;
         opacity: 1;
         transform: none;

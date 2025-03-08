@@ -17,16 +17,19 @@
         </ul>
     </nav>
 
-    <section id="Cuisine">
+    <main>
+    <section class="Cuisine-head">
         <h1><big>Popular Indian Dishes</big></h1>
         <p>Explore the flavors of India through its diverse and rich culinary traditios!</p>
-
         <audio controls muted>
             <source src="../titanium.mp3" type="audio/mp3">
             Your browser does not support the audio element. 
         </audio>
+    </section>    
 
+    <section class="cuisine-north">
         <h2>North Indian Cuisine</h2>
+        <div class="content">
         <p>North India is known for its rich, aromatic, and flavorful dishes often cooked with ghee and spices:</p>
 
         <ul>
@@ -34,32 +37,43 @@
             <li><b>Butter Chicken:</b> A creamy, tomato-based curry that's a favorite worldwide.</li>
             <li><b>Paneer Tikka:</b> Marinated paneer cubes grilled to perfection.</li>
         </ul>
+        </div>
 
-        <div><img src="../biryani.jpg" alt="biryani" title="biryani" width="350" height="250"></div>
+        <div><img src="../biryani.jpg" id="biryani-img" alt="biryani" title="biryani" width="350" height="250"></div>
         <div>Aromatic and flavorful Biryani</div>
+    </section>
 
+    <section class="cuisine-south">
         <h2>South Indian Cuisine</h2>
+        <div class="content">
         <p>South India offers a wide array of dishes with a perfect blend of spices and tangy flavors:</p>
         <ul>
             <li><b>Masala Dosa:</b>A crispy rice crepe stuffed with spicy potato filling.</li>
             <li><b>Idli and Sambar:</b> Soft rice cakes served with a tangy lentil il-haned vegetable.</li>
             <li><b>Chettinad Chicken:</b> A fiery, flavorful chicken dish from Tamil Nadu.</li>
         </ul>
+        </div>
 
-        <div><img src="../dosa.jpg" alt="dosa" title="dosa" width="350" height="250"></div>
+        <div><img src="../dosa.jpg" id="dosa-img" alt="dosa" title="dosa" width="350" height="250"></div>
         <div>South Indian favorite: Masala Dosa</div>
+    </section>
 
+    <section class="cuisine-sweet">
         <h2>Sweet Delights</h2>
+        <div class="content">
         <p>No Indian moul is complete without indulging su some mouth-watering desserts:</p>
         <ul>
             <li><b>Gulab Jamun:</b> Fried milk solids soaked in sugar syrup.</li>
             <li><b>Rasgulla:</b> Soft and spongy cheese balls in light sugar syrup.</li>
             <li><b>Payasan:</b> A South Indian dessert made of milk, rice, and jaggery.</li>
         </ul>
+        </div>
         
-        <div><img src="../gulab_jamun.jpg" alt="gulab_jamun" title="gulab_jamun" height="250" width="400"></div>
+        <div><img src="../gulab_jamun.jpg" id="gulab-img" alt="gulab_jamun" title="gulab_jamun" height="250" width="400"></div>
         <div>Irresistible Gulab Jamun</div>
     </section>
+    
+</main>
 
     <footer>
         <p id="contact"><a href="./index.html">←Back to Home</a></p>

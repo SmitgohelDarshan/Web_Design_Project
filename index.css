@@ -136,8 +136,14 @@ section {  /* for all sections*/
 }
 
 #qutubminar-img, #tajmahal-img{
+    transition: transform 0.5s ease-in-out;
     border-radius:10px;
     box-shadow: 10px 0px 60px rgba(12, 12, 12, 0.3);
+}
+#qutubminar-img:hover, #tajmahal-img:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 0px 60px rgb(4, 126, 213);
+
 }
 
 .image{
@@ -153,6 +159,11 @@ section {  /* for all sections*/
     width: 100%;
     height: 60vh;
     object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+.cuisine-parallax:hover{
+    transition: transform 0.5s ease-in-out;
+    transform:scale(1.1);
 }
 .cuisine-parallax {width: 100%; height: 60vh;overflow: hidden;}
 .culture-parallax{
@@ -173,6 +184,8 @@ section {  /* for all sections*/
     top: 5%;
     left: 0;
     transition: transform 0.5s ease-in-out;
+    border-radius:10px;
+
 }
 
 /* Hover Effect: Enlarging Images */
@@ -228,39 +241,81 @@ section {  /* for all sections*/
         padding: 12px;
         width: 100%;
     }
+    #links{display: flex;flex-direction: row;padding-left: 10px;}
+
+    main{width: 100%;padding: 20px 0px;}
+    *{width: 100%;}
+    section{margin: 20px 5px;}
     /* Fix for Hidden Text Content */
-    .home-parallax .content,
-    .culture-parallax .culture-text,
-    .cuisine-parallax .cuisine-text {
-        position: static; /* Remove absolute positioning */
-        transform: none; /* Remove translateY */
-        opacity: 1; /* Force visibility */
-        background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-        padding: 15px;
-        margin-top: 20px;
-        width: 100%;
-        text-align: left; /* Align text to left for readability */
+    .cuisine-parallax .cuisine-text{
+        margin-top: 100px; 
+        position: static; 
+        transform: none; 
+        opacity: 1; 
+        background: rgba(0, 0, 0, 0.8); 
+        padding: 5px;
+        width: 95%;
+        text-align: left;
+    }
+    .culture-parallax .culture-text{
+        margin-top: 300px; 
+        position: static; 
+        transform: none; 
+        opacity: 1; 
+        background: rgba(0, 0, 0, 0.8); 
+        padding: 5px;
+        width: 95%;
+        text-align: left; 
+    }
+    .home-parallax .content{
+        margin-top: 40px; 
+        position: static; 
+        transform: none; 
+        opacity: 1; 
+        background: rgba(0, 0, 0, 0.8); 
+        padding: 5px;
+        width: 95%;
+        text-align: left; 
     }
 
     /* Adjust Image Containers */
-    .home-parallax,
-    .culture-parallax,
-    .cuisine-parallax {
+    .home-parallax{
         height: auto; /* Remove fixed height */
         overflow: visible; /* Allow content to expand */
         padding: 15px;
     }
+    
+    .culture-parallax{height: 650px; /* Remove fixed height */
+        overflow: visible; /* Allow content to expand */
+        padding: 15px;} 
+    #qutubminar-img, #tajmahal-img{width: 95%;}
+    .landmarks-parallax{height: 1000px; width: 100%;}
+    .landmarks-parallax ol{flex-direction: column;height: 80vh;padding: 5px;}
+    .image{flex-direction: column;padding-top: 30px;}
+    .cuisine-parallax{
+        height: 870px;
+        overflow: hidden;
+        
+    }
 
     /* Fix Image Scaling */
-    #indian-img,
-    #dance-img,
+    #indian-img{width: 100%;
+        height: 250px; /* Responsive height */
+        max-height: 300px; /* Limit image height */
+        /* position: static; Remove absolute positioning */
+        transform: none; /* Remove scale effects */
+        display: flex;
+        flex-direction: column;}
+    #dance-img{width: 90%;margin-left: 20px; height: 250px;max-height: 300px;transform: none;display: flex;flex-direction: column;}
     #biryani-img,
     #food-img {
         width: 100%;
-        height: auto; /* Responsive height */
+        height: 230px; /* Responsive height */
         max-height: 300px; /* Limit image height */
-        position: static; /* Remove absolute positioning */
+        /* position: static; Remove absolute positioning */
         transform: none; /* Remove scale effects */
+        display: flex;
+        flex-direction: column;
     }
 
     /* Text Visibility Enhancements */
@@ -272,13 +327,8 @@ section {  /* for all sections*/
         margin-top: 20px;
     }
 
-    /* Adjust List Items */
-    ul, ol {
-        padding-left: 15px; /* Add padding for bullet points */
-    }
-
     ul li, ol li {
-        margin-bottom: 10px; /* Add spacing between list items */
+        margin-bottom: 10px; 
         font-size: 14px;
     }
 }
