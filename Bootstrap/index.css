@@ -1,0 +1,10 @@
+.nav{
+    margin-left: 300px;
+}
+.nav-link{
+    font-size: x-large;
+}
+.nav-item{
+    align-items: center;
+    padding-left: 50px;
+}
